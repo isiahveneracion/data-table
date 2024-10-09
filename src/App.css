@@ -1,0 +1,119 @@
+/* General Styling */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Ensure full-height centering */
+}
+
+#root {
+  width: 100%;
+  max-width: 1280px;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  max-width: 800px; /* Adjust the width to control the size */
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+td {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Search Input and Filter Styling */
+input[type="text"],
+input[type="date"] {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  padding: 8px 12px;
+  margin: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  width: 200px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus {
+  border-color: #4caf50;
+}
+
+label {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+/* Add hover effect for rows */
+tr:hover td {
+  background-color: #e9ffe9;
+}
+
+/* Form Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-container input {
+  margin-right: 10px;
+}
+
+/* Card Style */
+.card {
+  padding: 2em;
+}
+
+/* Sophisticated font for title or heading */
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Mobile-friendly adjustments */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+
+  input[type="text"],
+  input[type="date"] {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
